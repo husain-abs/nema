@@ -33,6 +33,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     return Scaffold(
         backgroundColor: PRIMARY_COLOR,
         body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
           child: Container(
             height: MediaQuery.of(context).size.height,
             child: Column(
@@ -73,7 +74,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                       CustomInput(
                         hintText: 'Email',
-                        errorText: 'Email cant be Emty!',
+                        errorText: 'Email cant be empty!',
                         controller: emailController,
                       ),
                       SizedBox(
@@ -81,7 +82,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                       CustomInput(
                         hintText: 'Password',
-                        errorText: 'Password cant be Emty!',
+                        errorText: 'Password cant be empty!',
                         controller: passwordController,
                       ),
                       SizedBox(
@@ -89,7 +90,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                       CustomInput(
                         hintText: 'Phone',
-                        errorText: 'Phone cant be Emty!',
+                        errorText: 'Phone cant be empty!',
                         controller: phoneController,
                       ),
                       SizedBox(
@@ -97,7 +98,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                       CustomInput(
                         hintText: 'Age',
-                        errorText: 'Age cant be Emty!',
+                        errorText: 'Age cant be empty!',
                         controller: ageController,
                       ),
                       SizedBox(
